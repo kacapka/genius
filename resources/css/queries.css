@@ -1,0 +1,168 @@
+/* Big tablet to 1200px (widths smaller than the 1200px row) */
+@media only screen and (max-width: 1200px) {
+    body {font-size: 16px;}
+    
+    .row {padding: 0 3%;}
+    
+    .first-training .text-box {margin-bottom: 50px;}
+    
+    #schedule .text-box {width: 90%; margin: 0 auto 60px;}
+    
+    #pricing .text-box {width: 90%; margin: 0 auto 40px;}
+    
+    .athlete-description {font-size: 100%;}
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {font-size: 14px;}
+    
+    .section-about {padding: 100px 100px;}
+    
+    .section-first-class {padding: 130px 0 50px 0;}
+    
+    .section-first-class .text-box h2 {margin-bottom: 15px;}
+    
+    .first-training {margin-bottom: 0;}
+    
+    #schedule {padding-bottom: 50px;}
+    
+    .section-community {margin-top: 0;}
+    
+    .logo-footer {width: 150px;}
+    
+    .logoLoading {
+        width: 256px;
+        height: 293px;
+    }
+    
+    .hamburger {
+        top: 20px;
+        right: 20px;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    
+    .logoLoading {
+        width: 200px;
+        height: 229px;
+    }         
+    
+    .header-text-box h1 {font-size: 200%;}
+    
+    .header-text-box h3 {font-size: 120%;}
+    
+    .social-icon {margin-top: 50px;}
+    
+    .section-about {padding: 80px 50px;}
+    
+    .first-training,
+    .mail-form {
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    .mail-form {
+        margin-bottom: 50px;
+    }
+    
+    input[type=email],
+    textarea {width: 100%;}
+    
+    .first-training .text-box:last-child {margin-bottom: 0;}
+    
+    .section-staff .text-staff {
+        padding: 20px 0;
+        font-size: 80%;
+    }
+    
+    .athlete-info {
+        width: 100%;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    
+    .athlete-description {padding-top: 15%;}
+    
+    .staff-member-huge2 {width: 100%;}
+        
+    .sara, 
+    .rx {
+        width: 100%;
+    }
+    
+    #schedule {padding-top: 80px;}
+    
+    .schedule-deskop {display: none;}
+    
+    .schedule-mobile {display: block;}
+    
+    .pricing-deskop {display: none;}
+    
+    .pricing-mobile {display: block;}
+    
+    .section-community {padding: 75px 5%;}
+    
+    .section-map {height:400px;}
+    
+    .map-text {display: none;}
+    
+    .logo-footer {width: 100px;}
+    
+    .footer-nav {margin-top: 80px;}
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .logoLoading {
+        width: 150px;
+        height: 171px;
+    }
+    
+    body {font-size: 12px;}
+    
+    .header-text-box h1 {font-size: 200%;}
+    
+    .header-text-box h3 {font-size: 100%;}
+    
+    .section-about {padding: 75px 5%;}
+    
+    .section-about .row p {font-size: 10px;}
+    
+    .mail-form {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .logo-footer {width: 70px;}
+    
+    .footer-nav {font-size:110%;}
+    
+    footer .row:last-child {
+        width: 50%;
+        text-align: center;
+    }
+    .copyrights span {display: none;}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    
+    .logoLoading {
+        width: 150px;
+        height: 171px;
+    }
+    
+    .price {
+        font-size: 160%;
+        margin-left: 15%;
+        margin-top: 40px;
+    }
+    
+    .section-about {padding: 75px 20px;}
+        
+}
