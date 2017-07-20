@@ -520,6 +520,11 @@ var josh = 'JOSH';*/
 		}		
 	];
   
+
+
+    })();
+
+
 //
 // google map location
 //
@@ -793,6 +798,4 @@ var josh = 'JOSH';*/
         info.setMap(map); 
     }
     
-
-    })();
 
