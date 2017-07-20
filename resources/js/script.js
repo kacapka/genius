@@ -519,13 +519,9 @@ var josh = 'JOSH';*/
 			description: 'Karnet wazny 28 dni od zakupu. Upowaznia do udzialu we wszytskih zajeciach dosteppnych w grafiku z wylaczeniem grupy On Ramp.'
 		}		
 	];
-  
-
-
-    })();
-
-
-//
+    
+    
+    //
 // google map location
 //
         
@@ -798,4 +794,11 @@ var josh = 'JOSH';*/
         info.setMap(map); 
     }
     
+
+  
+
+
+    })();
+
+
 
