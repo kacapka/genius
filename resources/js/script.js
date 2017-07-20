@@ -107,17 +107,17 @@ var pageLoading = document.querySelector('.pageLoading');
     var isMail = false;
     var isText = false;
 
-    function validInputMail() {
+    var validInputMail = function() {
         isMail = true;
         sendButtonOn();
     }
 
-    function validInputText() {
+    var validInputText = function() {
         isText = true;
         sendButtonOn();
     }
 
-    function sendButtonOn() {
+    var sendButtonOn = function() {
         var t = inputText.value.length;
         var m = inputMail.value.length;
         if (isMail && isText && t>0 && m>0) {
