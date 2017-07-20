@@ -3,7 +3,7 @@
 // Loading page
 //
 
-    /*var pageLoading = document.querySelector('.pageLoading');
+    var pageLoading = document.querySelector('.pageLoading');
     
     var loadPage = function() {
         pageLoading.style.opacity = 0;
@@ -12,7 +12,7 @@
         },1000);
     }
     
-    window.addEventListener('load', loadPage);*/
+    window.addEventListener('load', loadPage);
     
 
 // disable tab button
