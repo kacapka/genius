@@ -529,7 +529,7 @@ var josh = 'JOSH';*/
 // google map location
 //
         
-    function initMap() {
+ window.initMap = function() {
         var mapCenter = {
             lat: 52.2213704, 
             lng: 20.9605237
