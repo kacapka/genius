@@ -1,9 +1,8 @@
-(function() {
 //
 // Loading page
 //
 
-    var pageLoading = document.querySelector('.pageLoading');
+var pageLoading = document.querySelector('.pageLoading');
     
     var loadPage = function() {
         pageLoading.style.opacity = 0;
@@ -13,7 +12,10 @@
     }
     
     window.addEventListener('load', loadPage);
-    
+
+
+(function() {
+
 
 // disable tab button
 
