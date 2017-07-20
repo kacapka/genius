@@ -1,3 +1,4 @@
+(function() {
 //
 // Loading page
 //
@@ -790,4 +791,6 @@ var josh = 'JOSH';*/
         info.setMap(map); 
     }
     
+
+    })();
 
