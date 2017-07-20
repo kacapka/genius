@@ -54,9 +54,9 @@
             }
         }
         
-        hamburger.addEventListener('touchstart', openHamburger);
+        //hamburger.addEventListener('touchstart', openHamburger);
         hamburger.addEventListener('click', openHamburger);
-        hamBackground.addEventListener('touchstart', openHamburger);
+        //hamBackground.addEventListener('touchstart', openHamburger);
         hamBackground.addEventListener('click', openHamburger);
         hamNavAnchors.forEach(function(a) {
            a.addEventListener('click', openHamburger) 
