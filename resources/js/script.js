@@ -691,7 +691,7 @@ var josh = 'JOSH';*/
                 ]
               }
             ]
-        if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
+        if (window.innerWidth <= 767 /*|| window.isTabletOrMobile()*/) {
             var myOptsMap = {
                 zoom: 13,
                 center: mapCenter,
