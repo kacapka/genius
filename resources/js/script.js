@@ -14,7 +14,7 @@ var pageLoading = document.querySelector('.pageLoading');
     window.addEventListener('load', loadPage);
 
 
-(function() {
+//(function() {
 
 
 // disable tab button
@@ -129,8 +129,8 @@ var pageLoading = document.querySelector('.pageLoading');
         }
     }
 
-    inputMail.addEventListener('input', validInputMail);
-    inputText.addEventListener('input', validInputText);
+    inputMail.addEventListener('blur', validInputMail);
+    inputText.addEventListener('blur', validInputText);
         
 //
 // fadeIn effect
@@ -511,7 +511,7 @@ var josh = 'JOSH';*/
 			price2: ' 50 ',
 			description: 'Wejscie On Ramp to 120 min szkolenie wprowadzające w swiat Crossfitu. Idealne dla osób poczatkujacych. '
 		},
-		{
+		{s
             isOpen: true,
 			id: 'open',
 			price: '250 ',
@@ -520,7 +520,7 @@ var josh = 'JOSH';*/
 		}		
 	];
     
-    })();
+//    })();
 
 
 
