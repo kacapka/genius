@@ -12,6 +12,7 @@ body {
     background-color: #fff;
     color:#000;
     line-height: 150%;
+    position: relative;
 }
 
 .row {
