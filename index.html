@@ -36,6 +36,11 @@
         <!-- ---------------------------HEADER------------------------------------ -->
     
         <header id="home">
+            <video src="resources/css/video/bg_header_video.mp4" autoplay loop muted></video>
+            <div class="video-darker-bg"></div>
+            <div class="play-pause">
+                <i class="p-p-icon ion-pause"></i>
+            </div>
             <div class="header-text-box">
                 <h1>we are <span class="color-yellow">&#35;</span>teamgenius</h1>
                 <h3>probably the best community in Warsaw</h3>
@@ -71,9 +76,9 @@
                     <p>
                            Eat meat and vegetables, nuts and seeds, some fruit, little starch and no sugar.
                            Keep intake to levels that will support exercise but not body fat.
-                           Practice and train major lifts: <a href="#">Deadlift</a>, <a href="#">clean</a>, <a href="#">squat</a>, <a href="#">presses</a>, <a href="#">C&amp;J</a>, and <a href="#">snatch</a>.
-                           Similarly, master the basics of gymnastics: <a href="#">pull-ups</a>, <a href="#">dips</a>, <a href="#">rope climb</a>, <a href="#">push-ups</a>, 
-                            <a href="#">sit-ups</a>, <a href="#">presses to handstand</a>, <a href="#">pirouettes</a>, <a href="#">flips</a>, <a href="#">splits</a>, and <a href="#">holds</a>.
+                           Practice and train major lifts: Deadlift, clean, squat, presses, CJ, and snatch.
+                           Similarly, master the basics of gymnastics: pull-ups, dips, rope climb, push-ups, 
+                            sit-ups, presses to handstand,pirouettes, flips, splits, and holds.
                           Bike, run, swim, row, etc, hard and fast. Five or six days per week mix these elements
                             in as many combinations and patterns as creativity will allow.
                            Routine is the enemy. Keep workouts short and intense.
@@ -106,7 +111,7 @@
                 
                 <div class="mail-form">
                     <form>
-                        <input type="email" placeholder="your mail" required>
+                        <input id='mail-jQ' type="email" placeholder="your mail" required>
                         <textarea name="mail" max-length="300" placeholder="type here" required="required" rows="8" cols="20" wrap="hard"></textarea>
                         <button type="submit" name="sendMail" disabled>napisz do nas</button>
                     </form>
@@ -341,55 +346,6 @@
             </div>
         </div>
             
-    
-        <!--mobile-->
-            
-        <div class="schedule-mobile">
-            <div class="row">
-                <div class="col span-1-of-4">
-                    <div class="day-schedule">Pon-Wt</div>
-                    <div class="WOD" data-coach="RICH">6:30 - 7:30 <br> WOD</div>
-                    <div class="WOD" data-coach="RICH">7:45 - 8:45 <br> WOD</div>
-                    <div class="WOD" data-coach="RICH">9:00 - 10:00 <br> WOD</div>
-                    <div class="open-gym" data-coach="RX">10:00 - 16:30 <br> OPEN GYM</div>
-                    <div class="WOD" data-coach="DAN">16:45 - 17:45 <br> WOD</div>
-                    <div class="WOD" data-coach="DAN">18:00 - 19:00 <br> WOD</div>
-                    <div class="WOD" data-coach="JOSH">19:15 - 20:15 <br> WOD</div>
-                    <div class="WOD" data-coach="JOSH">20:30 - 21:30 <br> WOD</div>
-                </div>
-                <div class="col span-1-of-4">
-                    <div class="day-schedule">Sroda</div>
-                    <div class="WOD" data-coach="SARA">6:30 - 7:30 <br> WOD</div>
-                    <div class="WOD" data-coach="SARA">7:45 - 8:45 <br> WOD</div>
-                    <div class="WOD" data-coach="SARA">9:00 - 10:00 <br> WOD</div>
-                    <div class="open-gym" data-coach="RX">10:00 - 16:30 <br> OPEN GYM</div>
-                    <div class="WOD" data-coach="RICH">16:45 - 17:45 <br> WOD</div>
-                    <div class="weightlifting" data-coach="RICH">18:00 - 19:00 <br> BARBELL</div>
-                    <div class="WOD" data-coach="RICH">19:15 - 20:15 <br> WOD</div>
-                    <div class="WOD" data-coach="RICH">20:30 - 21:30 <br> WOD</div>
-                </div>
-                <div class="col span-1-of-4">
-                    <div class="day-schedule">Czw-Pt</div>
-                    <div class="WOD" data-coach="DAN">6:30 - 7:30 <br> WOD</div>
-                    <div class="WOD" data-coach="DAN">7:45 - 8:45 <br> WOD</div>
-                    <div class="WOD" data-coach="DAN">9:00 - 10:00 <br> WOD</div>
-                    <div class="open-gym" data-coach="RX">10:00 - 16:30 <br> OPEN GYM</div>
-                    <div class="WOD" data-coach="SARA">16:45 - 17:45 <br> WOD</div>
-                    <div class="WOD" data-coach="SARA">18:00 - 19:00 <br> WOD</div>
-                    <div class="WOD" data-coach="SARA">19:15 - 20:15 <br> WOD</div>
-                </div>
-                <div class="col span-1-of-4">
-                    <div class="day-schedule">Sobota</div>
-                    <div class="team-wod" data-coach="JOSH">10:00 - 11:00 <br> TEAM WOD</div>
-                    <div class="mobility" data-coach="JOSH">11:30 - 12:30 <br> MOBILITY</div>
-                    <div class="open-gym" data-coach="RX">12:30 - 15:00 <br> OPEN GYM</div>
-                </div>
-            </div>
-            <div class="row rest-mobile">
-                <div class="day-schedule">Niedziela</div>
-                <div class="rest-day">REST DAY</div>
-            </div>
-        </div>
         </section>
         
         <!-- ---------------------------PRICING------------------------------------ -->
@@ -501,10 +457,32 @@
         <section class="section-map">
             <div class="map"></div>
             <div class="map-box">
-                <div class="map-text">
-                    <p>Pocimy sie w godzinach<span style="margin:0 5px">&nbsp;</span>Pon-Sr: 6:30 - 21:30 | Czw-Pt: 6:30 - 20:30 | Sobota: 10:00 - 15:00</p>
-                    <p>Jestesmy przy Dworcu Zachodnim - przystanek Armatnia, dojazd liniami: 136,167,178,184,523,441</p>
+                <div class="item">
+                    <i class="ion-android-pin"></i>
+                    <div class="text">
+                        <span>Adres</span><br>
+                        Al. Prymasa Tysiaclecia 38<br>
+                        01-232 Warszawa
+                    </div>
                 </div>
+                
+                <div class="item">
+                    <i class="ion-android-time"></i>
+                    <div class="text">
+                        <span>Godziny otwarcia</span><br>
+                        Pon-Sr: 6:30 - 21:30 | Czw-Pt: 6:30 <br>- 20:30 | Sobota: 10:00 - 15:00
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <i class="ion-android-bus"></i>
+                    <div class="text">
+                        <span>Dojazd</span><br>
+                        przystanek Armatnia, linie:<br> 136,167,178,184,523,441 <br>
+                        oraz bezpośrednio z Dworca Zachodniego
+                    </div>
+                </div>
+                
             </div>
         </section>
         
@@ -534,6 +512,7 @@
         <script src="https://cdn.jsdelivr.net/g/respond@1.4.2(respond.min.js+respond.matchmedia.addListener.min.js)"></script>
         <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery-3.2.1.js"></script>
         <script src="resources/js/script.js"></script>
         <script src="resources/js/googleInitMap.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ZTlEUwXVEvXW_LBIMjB3ZCCwFDPC4eE&callback=initMap" async defer>

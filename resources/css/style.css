@@ -161,7 +161,7 @@ h3 {
 
 header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/header_cover.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header_cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(img/header_cover.jpg);
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
@@ -169,6 +169,43 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
+}
+
+header video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    pointer-events: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.video-darker-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #000);
+    z-index: 100;
+}
+
+.play-pause {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    z-index: 101;
+}
+
+.play-pause i {
+    font-size: 150%;
+    color:#fff;
+}
+
+.play-pause i:hover {
+    color: #f1c40f;
 }
 
 .header-text-box {
@@ -177,6 +214,7 @@ header {
     text-align:left;
     color:#fff;
     left:2%;
+    z-index: 101;
 }
 
 .header-text-box h1 {
@@ -198,7 +236,7 @@ header {
 	width: 100%;
 	height: 100vh;
 	background-color: #111;
-	z-index: 1;
+	z-index: 102;
 	-webkit-transition: all 350ms ease;
 	-webkit-transition: all .35s ease;
 	transition: all .35s ease;
@@ -326,7 +364,7 @@ header {
   top:0;
   background:#f1c40f;
   left:0;
-  z-index: 2;
+  z-index: 102;
   display: none;
 }
 
@@ -337,7 +375,7 @@ header {
 /*-----------------------------------------------------------*/
 
 .section-about {
-    background-color: #111;
+    background-color: #000;
     color:#fff;
     text-align: center;
     padding: 100px 200px;
@@ -707,41 +745,8 @@ textarea::placeholder {
    padding: 120px 0 150px 0; 
 }
 
-.schedule-mobile {
-    display: none ;
-}
-
 #schedule .text-box {
     margin-bottom: 60px;
-}
-
-.schedule-mobile .day-schedule {
-    width:65%;
-    margin: 0 auto;
-}
-
-.schedule-mobile .WOD,
-.schedule-mobile .open-gym,
-.schedule-mobile .weightlifting,
-.schedule-mobile .mobility,
-.schedule-mobile .team-wod {
-    width: 75%;
-    margin: 10px auto 0 auto;
-}
-
-.rest-mobile {
-    margin-top: 10%;
-}
-
-.rest-mobile .day-schedule {
-    width:23%;
-    float: left;
-    margin-top: 15px;
-}
-
-.rest-mobile .rest-day {
-    width: 73%;
-    float: right;
 }
 
 .day-schedule,
@@ -996,23 +1001,47 @@ i.ion-ios-paw {
     height: 100%;
     z-index: 0;
     background-color: #ecf0f1;
-    position: relative;
-}
-
-.map-text {
     position: absolute;
-    bottom:0;
-    left:0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 10;
-    text-align: center;
+    top: 0;
+    left: 0;
 }
 
-.map-text p {
+.map-box {
+    position: absolute;
+    top: 5%;
+    right: 40px;
+    width: 30%;
+    background-color: #fff;
+    z-index: 1000;
+    text-align: left;
+    height: 90%;
+}
+
+
+.item {
+    height: 33%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.item .text {
     text-transform: lowercase;
     letter-spacing: 2px;
     font-size: 60%;
+    display: inline-block;
+    text-align: center;
+}
+
+.text span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item i {
+    font-size: 150%;
+    display: block;
 }
 
 .marker_icon {
@@ -1029,6 +1058,7 @@ i.ion-ios-paw {
     transition: transform 0.8s ease;
     transition: transform 0.8s ease, -webkit-transform 0.8s ease;
 }
+
 
 .info_window {
     position: relative;

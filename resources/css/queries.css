@@ -51,7 +51,11 @@
     .logoLoading {
         width: 200px;
         height: 229px;
-    }         
+    } 
+    
+    video,
+    .video-darker-bg,
+    .play-pause {display: none;}
     
     .header-text-box h1 {font-size: 200%;}
     
@@ -98,19 +102,28 @@
     
     #schedule {padding-top: 80px;}
     
-    .schedule-deskop {display: none;}
-    
-    .schedule-mobile {display: block;}
-    
     .pricing-deskop {display: none;}
     
     .pricing-mobile {display: block;}
     
     .section-community {padding: 75px 5%;}
     
-    .section-map {height:400px;}
+    .section-map {
+        height:1000px;
+        background-color: #ecf0f1;
+    }
     
-    .map-text {display: none;}
+    .map {
+        height: 50%;
+        top: 50%;
+    }
+    
+    .map-box {
+        top: 2.5%;
+        right: 5%;
+        width: 90%;
+        height: 45%;
+    }
     
     .logo-footer {width: 100px;}
     

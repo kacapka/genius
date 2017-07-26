@@ -2,12 +2,14 @@
 // google map location
 //
         
- 
+(function(){
+    
+
 
 window.initMap = function() {
         var mapCenter = {
-            lat: 52.2213704, 
-            lng: 20.9605237
+            lat: 52.2276985, 
+            lng: 21.0131939
         };
         
         var mapStyle = [
@@ -273,6 +275,6 @@ window.initMap = function() {
         info.setMap(map); 
     }
     
-
+}());
   
 
