@@ -556,7 +556,7 @@ textarea::placeholder {
     width: 60px;
     z-index: 9990;
     height: 50px;
-/*    display: none;*/
+    display: none;
     cursor: pointer;
 }
 
@@ -829,7 +829,7 @@ i.ion-ios-paw {
 /*------------------------PRICING-----------------------------*/
 /*-----------------------------------------------------------*/
 
-.pricing-mobile {
+.pricing-deskop {
     display: none;
 }
 

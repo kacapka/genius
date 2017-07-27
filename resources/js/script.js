@@ -32,9 +32,6 @@
 
     $(function(){
     
-    console.log(this);
-
-
 // disable tab button
 
     document.addEventListener('keydown', function(e) {
@@ -361,7 +358,7 @@
 //    });
         $('.button-staff').click(openAthleteDetails);
     //quit.addEventListener('click', closeAthleteDetails);
-        $('.quit').on('click', closeAthleteDetails);
+        $('.quit-name').on('click', closeAthleteDetails);
 //    mails.forEach(function(m) {
 //        m.addEventListener('click', toggleMail)    
 //    });
