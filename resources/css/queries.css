@@ -47,11 +47,14 @@
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    
     .logoLoading {
         width: 200px;
         height: 229px;
-    } 
+    }
+    
+    .hamburger:hover:after{width: 57%;}
+    
+    .hamburger:hover:before{width: 80%;}
     
     video,
     .video-darker-bg,

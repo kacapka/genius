@@ -562,7 +562,6 @@ textarea::placeholder {
 .quit-name {
     color: #000;
 	font-size: 19.5px;
-	text-decoration: none;
 	position: absolute;
 	top: 0px;
 	left: -1px;
@@ -848,6 +847,7 @@ i.ion-ios-paw {
     letter-spacing: 5px;
     text-align: center;
     color:#fff; 
+    cursor: pointer;
 }
 
 .pricing-deskop li {
