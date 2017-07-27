@@ -361,7 +361,7 @@
 //    });
         $('.button-staff').click(openAthleteDetails);
     //quit.addEventListener('click', closeAthleteDetails);
-        $('.quit').click(closeAthleteDetails);
+        $('.quit').on('click', closeAthleteDetails);
 //    mails.forEach(function(m) {
 //        m.addEventListener('click', toggleMail)    
 //    });
@@ -471,7 +471,7 @@
 //    pricingBox.forEach(function(b) {
 //        b.addEventListener('click', activePricingBox)    
 //    });
-        $('.pricing_box').click(activePricingBox);
+        $('.pricing_box').on('click', activePricingBox);
 	
 	var data = [
 		{
