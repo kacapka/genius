@@ -358,7 +358,7 @@
 //    });
         $('.button-staff').click(openAthleteDetails);
     //quit.addEventListener('click', closeAthleteDetails);
-        $('.quit-name').on('click', 'div', closeAthleteDetails);
+        $('.quit').on('click', '.quit-name', closeAthleteDetails);
 //    mails.forEach(function(m) {
 //        m.addEventListener('click', toggleMail)    
 //    });
