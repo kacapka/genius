@@ -557,6 +557,7 @@ textarea::placeholder {
     z-index: 9990;
     height: 50px;
     display: none;
+    cursor: pointer;
 }
 
 .quit-name {
@@ -569,6 +570,7 @@ textarea::placeholder {
     padding: 5px 10px;
 	-webkit-transition: all 350ms;
 	transition: all 350ms;
+    cursor: pointer;
 }
 
 .staff-features a:link,
