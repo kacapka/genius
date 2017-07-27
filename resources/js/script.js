@@ -468,7 +468,7 @@
 //    pricingBox.forEach(function(b) {
 //        b.addEventListener('click', activePricingBox)    
 //    });
-        $('.pricing_box').on('click', 'li' activePricingBox);
+        $('.pricing_box').on('click', 'li', activePricingBox);
 	
 	var data = [
 		{
