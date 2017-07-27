@@ -850,6 +850,7 @@ i.ion-ios-paw {
     text-align: center;
     color:#fff; 
     cursor: pointer;
+    display: inline-block;
 }
 
 .pricing-deskop li {
@@ -861,7 +862,6 @@ i.ion-ios-paw {
 }
 
 .no-active {
-    display: inline-block;
     float: left;
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
@@ -877,7 +877,6 @@ i.ion-ios-paw {
 }
 
 .active {
-    display: inline-block;
     float: left;
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;

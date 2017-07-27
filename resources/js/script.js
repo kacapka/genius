@@ -410,7 +410,9 @@
     var priceStudent = document.querySelector('.price_amount_2');
     var priceDescription = document.querySelector('.price_description');
 
-    function activePricingBox() {
+    function activePricingBox(e) {
+        
+        e.preventDefault();
         
         var id = this.dataset.id;
         var activeDataItem = getDataById(id);
@@ -468,7 +470,7 @@
 //    pricingBox.forEach(function(b) {
 //        b.addEventListener('click', activePricingBox)    
 //    });
-        $('.pricing_box').click(activePricingBox);
+        $(document).on('click', 'li.pricing_box', activePricingBox);
 	
 	var data = [
 		{
