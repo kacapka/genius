@@ -468,7 +468,7 @@
 //    pricingBox.forEach(function(b) {
 //        b.addEventListener('click', activePricingBox)    
 //    });
-        $(document).on('touchstart', activePricingBox);
+        $('.pricing_box').on('click', 'li' activePricingBox);
 	
 	var data = [
 		{
