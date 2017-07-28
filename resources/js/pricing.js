@@ -2,9 +2,9 @@
 
 (function(){
     
-    $(function(){
-        $(document).on('click', 'li.pricing_box', activePricingBox);  
-    });
+//    $(function(){
+//        $(document).on('click', 'li.pricing_box', activePricingBox);  
+//    });
     
     var pricingBox = document.querySelectorAll('.pricing_box');
     var priceNormal = document.querySelector('.price_amount');
@@ -58,9 +58,7 @@
     }
     
     
-//    pricingBox.forEach(function(b) {
-//        b.addEventListener('click', activePricingBox)    
-//    });
+    
     
     function getDataById(id){ 
 		for(var i=0; i < data.length; i++) { 
@@ -114,6 +112,10 @@
 			description: 'Karnet wazny 28 dni od zakupu. Upowaznia do udzialu we wszytskih zajeciach dosteppnych w grafiku z wylaczeniem grupy On Ramp.'
 		}		
 	];
+    
+    pricingBox.forEach(function(b) {
+        b.addEventListener('click', activePricingBox)    
+    });
        
 })();
 
