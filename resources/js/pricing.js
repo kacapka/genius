@@ -3,7 +3,7 @@
 (function(){
     
     $(function(){
-        $(document).on('click touchstart', 'li.pricing_box', activePricingBox);  
+        $('.pricing_box').on('tap', activePricingBox);  
     });
     
     var pricingBox = document.querySelectorAll('.pricing_box');
