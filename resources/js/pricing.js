@@ -3,7 +3,7 @@
 (function(){
     
     $(function(){
-        $('.pricing_box').on('tap', activePricingBox);  
+        $('.pricing_box').click(activePricingBox);  
     });
     
     var pricingBox = document.querySelectorAll('.pricing_box');
@@ -17,7 +17,7 @@
         var activeDataItem = getDataById(id);
         
         if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
-                        
+        
             if (activeDataItem.isOpen) {
                 this.nextElementSibling.remove();
                 activeDataItem.isOpen = false;

@@ -39,7 +39,7 @@
        }
     });
     
-// disable tab button
+// video player- bg
     
     var playPause = document.querySelector('.p-p-icon');
     var videoBg = document.querySelector('video');
