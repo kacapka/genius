@@ -114,7 +114,7 @@
 	];
     
     pricingBox.forEach(function(b) {
-        b.addEventListener('click', activePricingBox)    
+        b.addEventListener('mousedown', activePricingBox)    
     });
        
 })();
