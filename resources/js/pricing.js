@@ -11,7 +11,7 @@
     var priceStudent = document.querySelector('.price_amount_2');
     var priceDescription = document.querySelector('.price_description');
 
-    function activePricingBox(e) {
+    function activePricingBox() {
          
         var id = this.dataset.id;
         var activeDataItem = getDataById(id);
