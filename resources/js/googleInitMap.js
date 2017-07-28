@@ -1,6 +1,4 @@
-//
 // google map location
-//
         
 (function(){
     
