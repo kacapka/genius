@@ -2,9 +2,9 @@
 
 (function(){
     
-//    $(function(){
-//        $(document).on('click', 'li.pricing_box', activePricingBox);  
-//    });
+    $(function(){
+        $(document).on('click touchstart', 'li.pricing_box', activePricingBox);  
+    });
     
     var pricingBox = document.querySelectorAll('.pricing_box');
     var priceNormal = document.querySelector('.price_amount');
@@ -113,9 +113,9 @@
 		}		
 	];
     
-    pricingBox.forEach(function(b) {
-        b.addEventListener('mousedown', activePricingBox)    
-    });
+//    pricingBox.forEach(function(b) {
+//        b.addEventListener('touchstart', activePricingBox)    
+//    });
        
 })();
 
