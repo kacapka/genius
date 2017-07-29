@@ -21,11 +21,11 @@
             if (activeDataItem.isOpen) {
                 this.nextElementSibling.remove();
                 activeDataItem.isOpen = false;
-                alert('zamykam!');
+                alert('!!!zamykam!');
             } else {
                 
-                alert('otwieram!');
-                /*var li = document.createElement('li');
+                
+                var li = document.createElement('li');
                 li.classList.add('row', 'mobile-pricing-details');
                 li.innerHTML = 'hahaha'; 
                    //`
@@ -40,8 +40,9 @@
 //                        </p>
 //                    </div>
 //                `  
-                this.after(li);*/
+//                this.after(li);
                 activeDataItem.isOpen = true;
+                alert('!!!otwieram!');
             }
                                 
         } else {
