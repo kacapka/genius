@@ -179,7 +179,7 @@
 //
     
     function fadeInEffect() {
-        fadeIn.forEach(function(fade) {
+        $(fadeIn).each(function(fade) {
             fadeInOn = (window.scrollY+window.innerHeight) - fade.clientHeight/2;
             var isScroll = fadeInOn > fade.offsetTop;
             if(isScroll) {
