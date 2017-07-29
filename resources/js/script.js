@@ -278,12 +278,12 @@
     
     function closeAthleteDetails() {
         
-        alert('zamykam');
+        alert('zamykam0');
         
-        members.forEach(function(m) {
-            m.classList.remove('staff-member-huge');
-            m.classList.remove('staff-member-huge2');
-        });
+//        members.forEach(function(m) {
+//            m.classList.remove('staff-member-huge');
+//            m.classList.remove('staff-member-huge2');
+//        });
         alert('zamykam1');
         body.style.overflowY = 'scroll';
         alert('zamykam2');
