@@ -31,13 +31,13 @@
                 li.classList.add('row', 'mobile-pricing-details');
                 li.innerHTML =  
                    `
-                   <div class="row">                        <span class="price"><span class="price_amount">vvv</span>zl <span class="price_option">  /normal</span></span>
-                        <span class="price"><span class="price_amount_2">ccc</span>zl <span class="price_option">  /student</span></span>
+                   <div class="row">                        <span class="price"><span class="price_amount">${activeDataItem.price}</span>zl <span class="price_option">  /normal</span></span>
+                        <span class="price"><span class="price_amount_2">${activeDataItem.price2}</span>zl <span class="price_option">  /student</span></span>
                     </div>
                             
                    <div class="row">
                         <p class="price_description">
-                            xxx
+                            ${activeDataItem.description}
                         </p>
                     </div>
                 `  
