@@ -29,19 +29,18 @@
                 
                 var li = document.createElement('li');
                 li.classList.add('row', 'mobile-pricing-details');
-                li.innerHTML = '<p>hahaha<p>'; 
-                   //`
-//                    <div class="row">
-//                        <span class="price"><span class="price_amount">vvv</span>zl <span class="price_option">  /normal</span></span>
-//                        <span class="price"><span class="price_amount_2">ccc</span>zl <span class="price_option">  /student</span></span>
-//                    </div>
-//                            
-//                    <div class="row">
-//                        <p class="price_description">
-//                            xxx
-//                        </p>
-//                    </div>
-//                `  
+                li.innerHTML =  
+                   `
+                   <div class="row">                        <span class="price"><span class="price_amount">vvv</span>zl <span class="price_option">  /normal</span></span>
+                        <span class="price"><span class="price_amount_2">ccc</span>zl <span class="price_option">  /student</span></span>
+                    </div>
+                            
+                   <div class="row">
+                        <p class="price_description">
+                            xxx
+                        </p>
+                    </div>
+                `  
                 $(this).after(li);
                 activeDataItem.isOpen = true;
                 alert('otwierom');
