@@ -278,29 +278,22 @@
     
     function closeAthleteDetails() {
         
-        alert('zamykam00');
+        alert('x');
+                
+        $(members).each(function(m) {
+            m.classList.remove('staff-member-huge');
+            m.classList.remove('staff-member-huge2');
+        });
         
-//        members.forEach(function(m) {
-//            m.classList.remove('staff-member-huge');
-//            m.classList.remove('staff-member-huge2');
-//        });
-        alert('zamykam1');
         body.style.overflowY = 'scroll';
-        alert('zamykam2');
         hamburger.style.display = 'block';
-        alert('zamykam3');
         quit.style.display = 'none';
-        alert('zamykam4');
-//        btnStaff.forEach(function(b) {
-//            b.style.display = 'block';
-//        });
-        alert('zamykam5');
-        athleteName.innerHTML = athlete.fullName;
-        alert('zamykam6');
+        $(btnStaff).each(function(b) {
+            b.style.display = 'block';
+        });
+        athleteName.innerHTML = athlete.fullName; 
         parent.style.transform = 'translateX(0)';
-        alert('zamykam7');
         feature.style.left = '20px';
-        alert('zamykam8');
         rx.style.transform = 'translateX(0)';
         alert('zamykam9');
         sara.style.transform = 'translateX(0)';
