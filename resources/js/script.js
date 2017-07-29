@@ -179,13 +179,14 @@
 //
     
     function fadeInEffect() {
-        $('.fade-in').each(function(fade) {
-            fadeInOn = (window.scrollY+window.innerHeight) - fade.clientHeight/2;
-            var isScroll = fadeInOn > fade.offsetTop;
+        $('.fade-in').each(function() {
+            var self = this;
+            fadeInOn = (window.scrollY+window.innerHeight) - self.clientHeight/2;
+            var isScroll = fadeInOn > self.offsetTop;
             if(isScroll) {
-                fade.classList.add('fade-in-active');
+                self.classList.add('fade-in-active');
             } else {
-                fade.classList.remove('fade-in-active');
+                self.classList.remove('fade-in-active');
             }
         });
     };
@@ -281,15 +282,15 @@
         alert('zzz');
                 
         $('.staff-member').each(function(m) {
-            m.classList.remove('staff-member-huge');
-            m.classList.remove('staff-member-huge2');
+            this.classList.remove('staff-member-huge');
+            this.classList.remove('staff-member-huge2');
         });
         
         body.style.overflowY = 'scroll';
         hamburger.style.display = 'block';
         quit.style.display = 'none';
         $('.button-staff').each(function(b) {
-            b.style.display = 'block';
+            this.style.display = 'block';
         });
         athleteName.innerHTML = athlete.fullName; 
         parent.style.transform = 'translateX(0)';
@@ -297,9 +298,7 @@
         rx.style.transform = 'translateX(0)';
         alert('zamykam9');
         sara.style.transform = 'translateX(0)';
-        alert('zamykam10');
         mail.innerHTML = `<i class="ion-android-mail"></i>`;
-        alert('zamykam11');
     }
     
    
