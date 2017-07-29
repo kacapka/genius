@@ -291,8 +291,8 @@
         alert('zamykam3');
         quit.style.display = 'none';
         alert('zamykam4');
-        btnStaff.forEach(function(btn) {
-            btn.style.display = 'block';
+        btnStaff.forEach(function(b) {
+            b.style.display = 'block';
         });
         alert('zamykam5');
         athleteName.innerHTML = athlete.fullName;
