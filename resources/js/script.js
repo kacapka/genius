@@ -278,7 +278,7 @@
     
     function closeAthleteDetails() {
         
-        alert('zamykam0');
+        alert('zamykam00');
         
 //        members.forEach(function(m) {
 //            m.classList.remove('staff-member-huge');
@@ -291,9 +291,9 @@
         alert('zamykam3');
         quit.style.display = 'none';
         alert('zamykam4');
-        btnStaff.forEach(function(b) {
-            b.style.display = 'block';
-        });
+//        btnStaff.forEach(function(b) {
+//            b.style.display = 'block';
+//        });
         alert('zamykam5');
         athleteName.innerHTML = athlete.fullName;
         alert('zamykam6');
