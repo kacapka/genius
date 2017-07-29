@@ -4,7 +4,7 @@
     
     $(function(){
         $('.pricing_box').click(activePricingBox);  
-    });
+    
     
     var pricingBox = document.querySelectorAll('.pricing_box');
     var priceNormal = document.querySelector('.price_amount');
@@ -42,7 +42,7 @@
 //                        </p>
 //                    </div>
 //                `  
-                self.after(li);
+                $(this).after(li);
                 activeDataItem.isOpen = true;
                 alert('otwierom');
             }
@@ -62,6 +62,8 @@
             this.classList.add('active');
             
     }
+    
+    });
     
     function getDataById(id){ 
 		for(var i=0; i < data.length; i++) { 
