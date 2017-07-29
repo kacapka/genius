@@ -12,7 +12,8 @@
     var priceDescription = document.querySelector('.price_description');
 
     function activePricingBox() {
-         
+        
+        
         var id = this.dataset.id;
         var activeDataItem = getDataById(id);
         
@@ -27,7 +28,7 @@
                 
                 var li = document.createElement('li');
                 li.classList.add('row', 'mobile-pricing-details');
-                li.innerHTML = 'hahaha'; 
+                li.innerHTML = '<p>hahaha<p>'; 
                    //`
 //                    <div class="row">
 //                        <span class="price"><span class="price_amount">vvv</span>zl <span class="price_option">  /normal</span></span>
@@ -40,7 +41,7 @@
 //                        </p>
 //                    </div>
 //                `  
-//                this.after(li);
+                this.after(li);
                 activeDataItem.isOpen = true;
                 alert('!!!otwieram!');
             }
