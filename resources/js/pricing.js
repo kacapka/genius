@@ -12,11 +12,13 @@
     var priceDescription = document.querySelector('.price_description');
 
     function activePricingBox() {
-         
-        var id = this.dataset.id;
-        var activeDataItem = getDataById(id);
         
-        if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
+        alert('hey');
+         
+//        var id = this.dataset.id;
+//        var activeDataItem = getDataById(id);
+        
+       /* if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
         
             if (activeDataItem.isOpen) {
                 this.nextElementSibling.remove();
@@ -25,7 +27,7 @@
                 
                 var li = document.createElement('li');
                 li.classList.add('row', 'mobile-pricing-details');
-               li.innerHTML = 'hahaha'; 
+                li.innerHTML = 'hahaha'; 
                    //`
 //                    <div class="row">
 //                        <span class="price"><span class="price_amount">vvv</span>zl <span class="price_option">  /normal</span></span>
@@ -55,11 +57,8 @@
                 box.classList.add('no-active')    
             });
             this.classList.add('active');
-            
+            */
     }
-    
-    
-    
     
     function getDataById(id){ 
 		for(var i=0; i < data.length; i++) { 
