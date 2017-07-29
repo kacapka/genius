@@ -51,13 +51,13 @@
             priceStudent.textContent = activeDataItem.price2;
             priceDescription.textContent = activeDataItem.description;
         }
-            pricingBox.forEach(function(box) {
-                box.classList.remove('active')    
+            $('.pricing_box').each(function() {
+                this.classList.remove('active')    
             });
-            pricingBox.forEach(function(box) {
-                box.classList.add('no-active')    
+            $('.pricing_box').each(function() {
+                this.classList.add('no-active')    
             });
-            this.classList.add('active');
+            $(this).addClass('active');
             
     }
     
