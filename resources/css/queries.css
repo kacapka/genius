@@ -51,14 +51,14 @@
         width: 200px;
         height: 229px;
     }
-    
-    .hamburger:hover:after{width: 57%;}
-    
-    .hamburger:hover:before{width: 80%;}
-    
+        
     video,
     .video-darker-bg,
     .play-pause {display: none;}
+    
+    .social-icon i {
+        padding: 15px;
+    }
     
     .header-text-box h1 {font-size: 200%;}
     
@@ -132,7 +132,7 @@
     
     .logo-footer {width: 100px;}
     
-    .footer-nav {margin-top: 80px;}
+    .footer-nav {margin-top: 75px;}
 }
 
 /* Small phones: from 0 to 480px */

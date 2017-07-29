@@ -5,9 +5,14 @@
 
 
 window.initMap = function() {
-        var mapCenter = {
+        var mapCenterDeskop = {
             lat: 52.2276985, 
             lng: 21.0131939
+        };
+    
+        var mapCenterMobile = {
+            lat: 52.2214033, 
+            lng: 20.9599979
         };
         
         var mapStyle = [
@@ -173,7 +178,7 @@ window.initMap = function() {
         if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
             var myOptsMap = {
                 zoom: 13,
-                center: mapCenter,
+                center: mapCenterMobile,
                 streetViewControl: true,
                 backgroundColor: '#ecf0f1',
                 streetViewControl: false,
@@ -184,7 +189,7 @@ window.initMap = function() {
         } else {
            var myOptsMap = {
                 zoom: 13,
-                center: mapCenter,
+                center: mapCenterDeskop,
                 streetViewControl: true,
                 backgroundColor: '#ecf0f1',
                 zoomControl: true,

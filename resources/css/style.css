@@ -361,7 +361,7 @@ header video {
 .highlighted {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  position: fixed;
+  position: absolute;
   top:0;
   background:#f1c40f;
   left:0;
