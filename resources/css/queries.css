@@ -60,6 +60,8 @@
         padding: 15px;
     }
     
+    header {background-attachment: scroll;}
+    
     .header-text-box h1 {font-size: 200%;}
     
     .header-text-box h3 {font-size: 120%;}
@@ -67,6 +69,8 @@
     .social-icon {margin-top: 50px;}
     
     .section-about {padding: 80px 50px;}
+    
+    .section-bg-img {background-attachment: scroll;}
     
     .first-training,
     .mail-form {
