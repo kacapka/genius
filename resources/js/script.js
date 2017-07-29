@@ -278,7 +278,7 @@
     
     function closeAthleteDetails() {
         
-        alert('zz');
+        alert('zzz');
                 
         $('.staff-member').each(function(m) {
             m.classList.remove('staff-member-huge');
