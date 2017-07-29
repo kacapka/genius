@@ -280,22 +280,33 @@
         
         alert('zamykam');
         
-//        members.forEach(function(m) {
-//            m.classList.remove('staff-member-huge');
-//            m.classList.remove('staff-member-huge2');
-//        });
+        members.forEach(function(m) {
+            m.classList.remove('staff-member-huge');
+            m.classList.remove('staff-member-huge2');
+        });
+        alert('zamykam1');
         body.style.overflowY = 'scroll';
+        alert('zamykam2');
         hamburger.style.display = 'block';
+        alert('zamykam3');
         quit.style.display = 'none';
+        alert('zamykam4');
         btnStaff.forEach(function(btn) {
             btn.style.display = 'block';
         });
+        alert('zamykam5');
         athleteName.innerHTML = athlete.fullName;
+        alert('zamykam6');
         parent.style.transform = 'translateX(0)';
+        alert('zamykam7');
         feature.style.left = '20px';
+        alert('zamykam8');
         rx.style.transform = 'translateX(0)';
+        alert('zamykam9');
         sara.style.transform = 'translateX(0)';
+        alert('zamykam10');
         mail.innerHTML = `<i class="ion-android-mail"></i>`;
+        alert('zamykam11');
     }
     
    
