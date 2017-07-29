@@ -23,7 +23,6 @@
             if (activeDataItem.isOpen) {
                 self.nextElementSibling.remove();
                 activeDataItem.isOpen = false;
-                alert('zamykom');
             } else {
                 
                 
@@ -43,7 +42,7 @@
                 `  
                 $(this).after(li);
                 activeDataItem.isOpen = true;
-                alert('otwierom');
+
             }
                                 
         } else {

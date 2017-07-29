@@ -277,7 +277,10 @@
     }
     
     function closeAthleteDetails() {
-        members.forEach(function(m) {
+        
+        alert('zamykam')
+        
+        /*members.forEach(function(m) {
             m.classList.remove('staff-member-huge');
             m.classList.remove('staff-member-huge2');
         });
@@ -292,7 +295,7 @@
         feature.style.left = '20px';
         rx.style.transform = 'translateX(0)';
         sara.style.transform = 'translateX(0)';
-        mail.innerHTML = `<i class="ion-android-mail"></i>`;
+        mail.innerHTML = `<i class="ion-android-mail"></i>`;*/
     }
     
    
