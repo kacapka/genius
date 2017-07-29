@@ -270,6 +270,7 @@
         athleteInstagram.href = athlete.instagramLink;
         
         setTimeout(athleteInfoTransform,1000);
+        stopScrolling(true);
         } 
     
     function athleteInfoTransform() {
@@ -318,7 +319,7 @@
             });
         }, 1000);
         
-        
+        stopScrolling(false);
     }
     
    
