@@ -12,20 +12,20 @@
     var priceDescription = document.querySelector('.price_description');
 
     function activePricingBox() {
-        
-        alert('hey');
          
-//        var id = this.dataset.id;
-//        var activeDataItem = getDataById(id);
+        var id = this.dataset.id;
+        var activeDataItem = getDataById(id);
         
-       /* if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
+        if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
         
             if (activeDataItem.isOpen) {
                 this.nextElementSibling.remove();
                 activeDataItem.isOpen = false;
+                alert('zamykam');
             } else {
                 
-                var li = document.createElement('li');
+                alert('otwieram');
+                /*var li = document.createElement('li');
                 li.classList.add('row', 'mobile-pricing-details');
                 li.innerHTML = 'hahaha'; 
                    //`
@@ -40,7 +40,7 @@
 //                        </p>
 //                    </div>
 //                `  
-                this.after(li);
+                this.after(li);*/
                 activeDataItem.isOpen = true;
             }
                                 
@@ -57,7 +57,7 @@
                 box.classList.add('no-active')    
             });
             this.classList.add('active');
-            */
+            
     }
     
     function getDataById(id){ 
