@@ -79,6 +79,7 @@
                 this.classList.add('open');
                 hamBackground.classList.add('reveal');
                 document.body.classList.add('hamOpen');
+                document.body.style.overflowY = 'hidden';
                 hamMenu.style.display = 'block';
                 socialIcon.style.display = 'block';
                 isHamburgerOpen = true;
@@ -86,6 +87,7 @@
                 hamburger.classList.remove('open');
                 hamBackground.classList.remove('reveal');
                 document.body.classList.remove('hamOpen');
+                document.body.style.overflowY = 'auto';
                 hamMenu.style.display = 'none';
                 socialIcon.style.display = 'none';
                 navHighlight.style.display = 'none';
@@ -194,7 +196,7 @@
     
     var fadeIn = document.querySelectorAll('.fade-in');
     //window.addEventListener('scroll', fadeInEffect);
-        $(window).scroll(fadeInEffect);
+    $(window).scroll(fadeInEffect);
     
 
 //      
@@ -279,26 +281,28 @@
     
     function closeAthleteDetails() {
         
-        alert('zzz');
                 
-        $('.staff-member').each(function(m) {
-            this.classList.remove('staff-member-huge');
-            this.classList.remove('staff-member-huge2');
-        });
-        
         body.style.overflowY = 'scroll';
         hamburger.style.display = 'block';
         quit.style.display = 'none';
-        $('.button-staff').each(function(b) {
+        $('.button-staff').each(function() {
             this.style.display = 'block';
         });
         athleteName.innerHTML = athlete.fullName; 
         parent.style.transform = 'translateX(0)';
         feature.style.left = '20px';
         rx.style.transform = 'translateX(0)';
-        alert('zamykam9');
         sara.style.transform = 'translateX(0)';
-        mail.innerHTML = `<i class="ion-android-mail"></i>`;
+//        mail.innerHTML = `<i class="ion-android-mail"></i>`;
+        
+        setTimeout(function(){
+            $('.staff-member').each(function() {
+                this.classList.remove('staff-member-huge');
+                this.classList.remove('staff-member-huge2');
+            });
+        }, 1000);
+        
+        
     }
     
    
