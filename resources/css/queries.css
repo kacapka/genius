@@ -112,6 +112,15 @@
     
     #schedule {padding-top: 80px;}
     
+    #schedule .col {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    .rest-day {
+        padding: 15px 0;
+    }
+    
 
     .pricing-deskop {display: none;}
     
@@ -131,7 +140,7 @@
     }
     
     .map-box {
-        top: 2.5%;
+        top: 2.3%;
         right: 5%;
         width: 90%;
         height: 45%;

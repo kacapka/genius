@@ -996,13 +996,14 @@ i.ion-ios-paw {
     width: 100%;
     height: 500px;
     position: relative;
+    background-color: #fff;
 }
 
 .map {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-color: #ecf0f1;
+    background-color: #fff;
     position: absolute;
     top: 0;
     left: 0;
