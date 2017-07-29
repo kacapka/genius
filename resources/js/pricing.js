@@ -13,16 +13,17 @@
 
     function activePricingBox() {
         
+        var self = this;
         
-        var id = this.dataset.id;
+        var id = self.dataset.id;
         var activeDataItem = getDataById(id);
         
         if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
         
             if (activeDataItem.isOpen) {
-                this.nextElementSibling.remove();
+                self.nextElementSibling.remove();
                 activeDataItem.isOpen = false;
-                alert('!!!zamykam! kurwa');
+                alert('zamykom');
             } else {
                 
                 
@@ -41,9 +42,9 @@
 //                        </p>
 //                    </div>
 //                `  
-                this.after(li);
+                self.after(li);
                 activeDataItem.isOpen = true;
-                alert('!!!otwieram!');
+                alert('otwierom');
             }
                                 
         } else {
