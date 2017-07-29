@@ -21,7 +21,7 @@
             if (activeDataItem.isOpen) {
                 this.nextElementSibling.remove();
                 activeDataItem.isOpen = false;
-                alert('!!!zamykam!');
+                alert('!!!zamykam! kurwa');
             } else {
                 
                 
