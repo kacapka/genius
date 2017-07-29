@@ -179,7 +179,7 @@
 //
     
     function fadeInEffect() {
-        $(fadeIn).each(function(fade) {
+        $('.fade-in').each(function(fade) {
             fadeInOn = (window.scrollY+window.innerHeight) - fade.clientHeight/2;
             var isScroll = fadeInOn > fade.offsetTop;
             if(isScroll) {
@@ -278,9 +278,9 @@
     
     function closeAthleteDetails() {
         
-        alert('xx');
+        alert('yy');
                 
-        $(members).each(function(m) {
+        $('.staff-member').each(function(m) {
             m.classList.remove('staff-member-huge');
             m.classList.remove('staff-member-huge2');
         });
@@ -288,7 +288,7 @@
         body.style.overflowY = 'scroll';
         hamburger.style.display = 'block';
         quit.style.display = 'none';
-        $(btnStaff).each(function(b) {
+        $('.button-staff').each(function(b) {
             b.style.display = 'block';
         });
         athleteName.innerHTML = athlete.fullName; 
