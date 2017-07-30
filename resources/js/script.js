@@ -425,13 +425,9 @@
             box.addEventListener('mouseleave', daysHoverOff);
         }
     }); 
-
-//
-// pricing 
-//  
-		 
     
         });
+
     
     })();
 

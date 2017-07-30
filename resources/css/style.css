@@ -399,7 +399,7 @@ header video {
 }
 
 
-.section-bg-img {
+/*.section-bg-img {
     background-image: url(img/gallery_open.JPG);
     width: 100%;
     height: 40vh;
@@ -409,6 +409,35 @@ header video {
     position: relative;
     background-attachment: fixed;
     padding: 0;
+}*/
+
+.section-bg-img {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+.bg-wrapper {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image {
+    background-image: url(img/gallery_open.JPG);
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 /*-----------------------------------------------------------*/
