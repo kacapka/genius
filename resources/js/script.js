@@ -297,8 +297,7 @@
     }
     
     function closeAthleteDetails() {
-        
-                
+               
         body.style.overflowY = 'scroll';
         hamburger.style.display = 'block';
         quit.style.display = 'none';
@@ -428,7 +427,6 @@
     
         });
 
-    
     })();
 
 
