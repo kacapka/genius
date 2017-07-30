@@ -74,8 +74,8 @@
         }
     }
     
-    $('.p-p-icon').click(playStopVideo);
-    //playPause.addEventListener('click', playStopVideo);
+    //$('.p-p-icon').click(playStopVideo);
+    playPause.addEventListener('click', playStopVideo);
 
 //
 // hamburger
@@ -111,10 +111,10 @@
             }
         }
         
-        //hamburger.addEventListener('click', openHamburger);
-        $('.hamburger').click(openHamburger);
-        //hamBackground.addEventListener('click', openHamburger);
-        $('.bg-hamburger').click(openHamburger);
+        hamburger.addEventListener('click', openHamburger);
+        //$('.hamburger').click(openHamburger);
+        hamBackground.addEventListener('click', openHamburger);
+        //$('.bg-hamburger').click(openHamburger);
 //        hamNavAnchors.forEach(function(a) {
 //           a.addEventListener('click', openHamburger) 
 //        });
