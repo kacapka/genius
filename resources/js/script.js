@@ -272,9 +272,11 @@
         setTimeout(athleteInfoTransform,1000);
         stopScrolling(true);
         } 
+        
+        //|| window.isTabletOrMobile()
     
     function athleteInfoTransform() {
-        if (window.innerWidth <= 767 || window.isTabletOrMobile()) {
+        if (window.innerWidth <= 767 ) {
             if (parent.dataset.name === 'sara') {
                 sara.style.transform = 'translate(100%)';
             }else if (parent.dataset.name === 'rx') {
