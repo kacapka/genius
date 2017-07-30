@@ -46,7 +46,8 @@
 }
 
 /* Small phones to small tablets: from 481px to 767px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px),
+@media (max-device-width: 800px) and (orientation: portrait){
     .logoLoading {
         width: 200px;
         height: 229px;
