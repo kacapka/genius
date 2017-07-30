@@ -436,8 +436,8 @@ header video {
     height: 100%;
     background-size: cover;
     background-position: center center;
-    /*transform: translateZ(0);
-    will-change: transform;*/
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 /*-----------------------------------------------------------*/
