@@ -365,7 +365,7 @@
             instagramLink: 'https://www.instagram.com/sarasigmunds/',
             facebookLink: 'https://www.facebook.com/ragnheidursarasigm/',
             mail: 'sarasigmund@genius.pl',
-            about: 'Ragnheiður Sara Sigmundsdottir has competed at the CrossFit Games twice and finished on the podium both times. The Icelandic native first made a name for herself when, after taking third worldwide in the 2015 Open, she won the 2015 Meridian Regional, outperforming several former Games athletes including two-time champion Annie Thorisdottir. Though fans may have wondered if the lead was a fluke, she proved otherwise with a nearly identical performance in 2016, taking fourth in the Open and once again winning the Meridian Regional and finishing third at the Games, taking seven top-five finishes. Known for her buoyant personality and love for pizza, Sigmundsdottir is a trainer at CrossFit Sudurnes in Reykjanesbaer, Iceland.'
+            about: 'Ragnheiður Sara Sigmundsdottir has competed at the CrossFit Games twice and finished on the podium both times. The Icelandic native first made a name for herself when, after taking third worldwide in the 2015 Open, she won the 2015 Meridian Regional, outperforming several former Games athletes. Though fans may have wondered if the lead was a fluke, she proved otherwise with a nearly identical performance in 2016, taking fourth in the Open and once again winning the Meridian Regional and finishing third at the Games, taking seven top-five finishes.'
         },
         {
             name: 'rx',
