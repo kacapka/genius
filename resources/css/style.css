@@ -161,7 +161,7 @@ h3 {
 
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/genius-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(img/genius-bg.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(img/genius-bg.jpg);
     width: 100%;
     height: 100vh;
@@ -174,6 +174,7 @@ header {
 }
 
 header video {
+    -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
     height: 100%; 
@@ -189,6 +190,7 @@ header video {
     left: 0;
     width: 100%;
     height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(#000));
     background: linear-gradient(rgba(0, 0, 0, 0.5), #000);
     z-index: 100;
 }
@@ -436,6 +438,7 @@ header video {
     height: 100%;
     background-size: cover;
     background-position: center center;
+    -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
 }
