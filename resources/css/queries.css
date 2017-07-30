@@ -70,11 +70,6 @@
     
     .section-about {padding: 80px 50px;}
     
-    .section-bg-img {
-        background-attachment: scroll;
-        height: 70vh;
-    }
-    
     .first-training,
     .mail-form {
         width: 70%;
