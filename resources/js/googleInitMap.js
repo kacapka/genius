@@ -229,7 +229,7 @@ window.initMap = function() {
                 if(!isOnTop){
                    divInfo.style.opacity = 0.8;
                    isOnTop = true;
-                } else {
+                 } else {
                    divInfo.style.opacity = 0.01;
                    isOnTop = false;    
                 }        

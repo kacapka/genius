@@ -53,8 +53,12 @@
     }
         
     video,
-    .video-darker-bg,
     .play-pause {display: none;}
+    
+    .video-darker-bg {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(#000));
+        background: linear-gradient(rgba(0, 0, 0, 0.3), #000);
+    }
     
     .social-icon i {
         padding: 15px;

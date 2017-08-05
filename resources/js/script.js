@@ -3,6 +3,7 @@
 //
 
     var pageLoading = document.querySelector('.pageLoading');
+    var bgImg = document.querySelector('.mobile-bg');
     
     var loadPage = function() {
         pageLoading.style.opacity = 0;
@@ -10,8 +11,41 @@
            pageLoading.style.display = 'none';
         },1000);
     }
+     
+    function bgImageMobileAnimation() {
+        
+        var imgWidth = bgImg.width;
+        var userWindowWidth = window.innerWidth;
+        var x = imgWidth - userWindowWidth;
+        
+        if (imgWidth > userWindowWidth) {
+            moveBgImg(bgImg, x);
+        } else {
+            return; 
+        }
+    }
+
+    var toRight = false;
+
+    function moveBgImg(el, px) {
+        
+        if (!toRight) {
+            el.style.transform = `translate(${-px}px , 0)`;
+            toRight = true;
+            console.log('to right');
+        } else {
+            el.style.transform = `translate(0, 0)`;
+            toRight = false;
+            console.log('to left');
+        }
+    }
+
+    
     
     window.addEventListener('load', loadPage);
+    window.addEventListener('load', bgImageMobileAnimation);
+    bgImg.addEventListener('transitionend', bgImageMobileAnimation);
+
 
 //var geniusScript = geniusScript || {};
 
